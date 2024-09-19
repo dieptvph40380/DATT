@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/naMenu"
+            android:icon="@drawable/icon_fb"
+            android:title="add" />
+        <item
+            android:id="@+id/naMenu2"
+            android:title="add" />
+    </group>
+    <group
+        android:id="@+id/group2">
+        <item
+            android:icon="@drawable/icon_fb"
+            android:id="@+id/naMenu3"
+            android:title="add" />
+        <item
+            android:id="@+id/naMen4"
+            android:title="add" />
+    </group>
+
+</menu>
