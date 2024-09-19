@@ -13,6 +13,12 @@
         android:theme="@style/Theme.DATT"
         tools:targetApi="31">
         <activity
+            android:name=".Screen_User.Us_Register"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_User.Us_Login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
