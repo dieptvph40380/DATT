@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21189128311",
+    "project_id": "datt-8ef3a",
+    "storage_bucket": "datt-8ef3a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21189128311:android:373a578408a42c8c78d672",
+        "android_client_info": {
+          "package_name": "com.example.datt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPL_U06LrmDMlbqy48ZubAM2kwJvlXzmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
