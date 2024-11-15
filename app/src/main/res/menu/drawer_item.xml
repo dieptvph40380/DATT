@@ -4,21 +4,13 @@
         android:id="@+id/group1">
         <item
             android:id="@+id/naMenu"
-            android:icon="@drawable/icon_fb"
-            android:title="add" />
+            android:icon="@drawable/home"
+            android:title="Trang chủ" />
         <item
-            android:id="@+id/naMenu2"
-            android:title="add" />
+            android:id="@+id/naBook"
+            android:icon="@drawable/calendar"
+            android:title="Đặt lịch" />
     </group>
-    <group
-        android:id="@+id/group2">
-        <item
-            android:icon="@drawable/icon_fb"
-            android:id="@+id/naMenu3"
-            android:title="add" />
-        <item
-            android:id="@+id/naMen4"
-            android:title="add" />
-    </group>
+
 
 </menu>

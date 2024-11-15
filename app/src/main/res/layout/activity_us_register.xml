@@ -86,7 +86,7 @@
                     app:shapeAppearanceOverlay="@style/Button4">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/eMail"
+                        android:id="@+id/Regis_Email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -111,7 +111,7 @@
                     app:shapeAppearanceOverlay="@style/Button4">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwords"
+                        android:id="@+id/Regis_Pass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -136,7 +136,7 @@
                     app:shapeAppearanceOverlay="@style/Button4">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwordss"
+                        android:id="@+id/Regis_RePass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -148,7 +148,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_logIn"
+                android:id="@+id/btn_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -163,7 +163,7 @@
                 app:shapeAppearanceOverlay="@style/Button5" />
 
             <Button
-                android:id="@+id/btn_SingIn"
+                android:id="@+id/btn_Register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#f4f4f4">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ứng Dụng Đặt Sân Bóng Đá"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:textStyle="bold" />
+
+    <!-- Mô tả chi tiết về ứng dụng -->
+    <TextView
+        android:id="@+id/app_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ứng dụng giúp bạn dễ dàng đặt sân bóng đá trực tuyến. Bạn có thể chọn sân, chọn giờ và thanh toán ngay lập tức chỉ với vài thao tác đơn giản."
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center" />
+
+    <!-- Các tính năng nổi bật -->
+    <TextView
+        android:id="@+id/features_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Các Tính Năng Nổi Bật"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/features_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Đặt sân bóng đá nhanh chóng.\n• Lịch sử đặt sân dễ dàng tra cứu.\n• Thanh toán trực tiếp an toàn và tiện lợi.\n• Nhận thông báo về các chương trình khuyến mãi."
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

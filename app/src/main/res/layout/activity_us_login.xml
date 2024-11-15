@@ -86,7 +86,7 @@
                     app:shapeAppearanceOverlay="@style/Button4">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/eMail"
+                        android:id="@+id/Sign_Email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -111,7 +111,7 @@
                     app:shapeAppearanceOverlay="@style/Button4">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwords"
+                        android:id="@+id/Sign_Pass"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -133,7 +133,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_logIn"
+                android:id="@+id/btn_Signin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -147,22 +147,8 @@
                 android:textSize="17sp"
                 app:shapeAppearanceOverlay="@style/Button5" />
 
-            <Button
-                android:id="@+id/btn_SingIn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:elevation="15dp"
-                android:gravity="center"
-                android:text="Register in"
-                android:textAllCaps="false"
-                android:textSize="17sp"
-                android:visibility="gone"
-                app:shapeAppearanceOverlay="@style/Button5" />
-
             <TextView
+                android:id="@+id/tv_Regis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

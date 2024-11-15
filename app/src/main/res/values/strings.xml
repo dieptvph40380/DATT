@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DATT</string>
+    <string name="x_c_th_c_m_otp">x_c_th_c_m_otp</string>
+    <string name="kh_ng_nh_n_c_m_otp">kh_ng_nh_n_c_m_otp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
