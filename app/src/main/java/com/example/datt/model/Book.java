@@ -8,6 +8,7 @@ public class Book {
     String thoigiandat;
     String trangthai;
     Integer gia;
+    String mathanhtoan;
 
     public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> FootballField = new HashMap<>();
@@ -16,18 +17,20 @@ public class Book {
         FootballField.put("thoigiandat", thoigiandat);
         FootballField.put("trangthai", trangthai);
         FootballField.put("gia", gia);
+        FootballField.put("mathanhtoan", mathanhtoan);
         return FootballField;
     }
 
     public Book() {
     }
 
-    public Book(String tensan, Integer ca, String thoigiandat, String trangthai, Integer gia) {
+    public Book(String tensan, Integer ca, String thoigiandat, String trangthai, Integer gia, String mathanhtoan) {
         this.tensan = tensan;
         this.ca = ca;
         this.thoigiandat = thoigiandat;
         this.trangthai = trangthai;
         this.gia = gia;
+        this.mathanhtoan = mathanhtoan;
     }
 
     public String getTensan() {
@@ -68,5 +71,13 @@ public class Book {
 
     public void setGia(Integer gia) {
         this.gia = gia;
+    }
+
+    public String getMathanhtoan() {
+        return mathanhtoan;
+    }
+
+    public void setMathanhtoan(String mathanhtoan) {
+        this.mathanhtoan = mathanhtoan;
     }
 }

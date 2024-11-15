@@ -1,11 +1,13 @@
 package com.example.datt.model;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 public class SoccerTime {
     String tenca;
     String giaca;
-    Integer soluong;
+    String soluong;
     String thoigianca;
 
     public HashMap<String, Object> toHashMap() {
@@ -17,11 +19,18 @@ public class SoccerTime {
         return SoccerTime;
     }
 
+    public int getSoluongAsInt() {
+        try {
+            return Integer.parseInt(soluong);
+        } catch (NumberFormatException e) {
+            return 0; // Giá trị mặc định nếu lỗi
+        }
+    }
 
     public SoccerTime() {
     }
 
-    public SoccerTime(String tenca, String giaca, Integer soluong, String thoigianca) {
+    public SoccerTime(String tenca, String giaca, String soluong, String thoigianca) {
         this.tenca = tenca;
         this.giaca = giaca;
         this.soluong = soluong;
@@ -44,11 +53,11 @@ public class SoccerTime {
         this.giaca = giaca;
     }
 
-    public Integer getSoluong() {
+    public String getSoluong() {
         return soluong;
     }
 
-    public void setSoluong(Integer soluong) {
+    public void setSoluong(String soluong) {
         this.soluong = soluong;
     }
 
