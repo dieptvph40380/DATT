@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class SoccerTime {
     String tenca;
     String giaca;
-    String soluong;
+    Object soluong;
     String thoigianca;
 
     public HashMap<String, Object> toHashMap() {
@@ -19,18 +19,10 @@ public class SoccerTime {
         return SoccerTime;
     }
 
-    public int getSoluongAsInt() {
-        try {
-            return Integer.parseInt(soluong);
-        } catch (NumberFormatException e) {
-            return 0; // Giá trị mặc định nếu lỗi
-        }
-    }
-
     public SoccerTime() {
     }
 
-    public SoccerTime(String tenca, String giaca, String soluong, String thoigianca) {
+    public SoccerTime(String tenca, String giaca, Object soluong, String thoigianca) {
         this.tenca = tenca;
         this.giaca = giaca;
         this.soluong = soluong;
@@ -53,11 +45,11 @@ public class SoccerTime {
         this.giaca = giaca;
     }
 
-    public String getSoluong() {
+    public Object getSoluong() {
         return soluong;
     }
 
-    public void setSoluong(String soluong) {
+    public void setSoluong(Object soluong) {
         this.soluong = soluong;
     }
 

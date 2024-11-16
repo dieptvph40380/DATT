@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.datt.R;
 import com.example.datt.adapter.FootballFieldAdapter;
@@ -44,9 +45,9 @@ public class Detail_Book extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         adapter_soccertime = new SoccerTimeAdapter(this, scoccertime, db);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
 //        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false);
-        rcv_soccer.setLayoutManager(gridLayoutManager);
+        rcv_soccer.setLayoutManager(staggeredGridLayoutManager);
         rcv_soccer.setAdapter(adapter_soccertime);
 
         ListenFirebaseFirestore_Soccertime();

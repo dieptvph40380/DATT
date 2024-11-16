@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,18 +42,17 @@ public class SoccerTimeAdapter  extends RecyclerView.Adapter<SoccerTimeAdapter.V
 
     @Override
     public void onBindViewHolder(@NonNull SoccerTimeAdapter.ViewHolder holder, int position) {
-        holder.ca.setText("Tên sân : "+Soccertime.get(position).getTenca());
-        holder.solg.setText("Số lượng sân : "+String.valueOf(Soccertime.get(position).getSoluong()));
-        holder.thoigian.setText("Tên sân : "+Soccertime.get(position).getThoigianca());
-        holder.giaca.setText("Số lượng sân : "+Soccertime.get(position).getGiaca());
+        holder.ca.setText("Tên ca : "+Soccertime.get(position).getTenca());
+        holder.thoigian.setText("Thời gian : "+Soccertime.get(position).getThoigianca());
+        holder.giaca.setText("Giá cả : "+Soccertime.get(position).getGiaca());
 
 
-        holder.btnselect.setOnClickListener(new View.OnClickListener() {
+        holder.lin_soccer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(view.getContext(), Detail_Book.class);
                 intent.putExtra("ca",Soccertime.get(position).getTenca());
-
+                intent.putExtra("giaca",Soccertime.get(position).getGiaca());
                 view.getContext().startActivity(intent);
             }
         });
@@ -67,12 +67,12 @@ public class SoccerTimeAdapter  extends RecyclerView.Adapter<SoccerTimeAdapter.V
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView ca,giaca,solg,thoigian;
         Button btnselect;
+        LinearLayout lin_soccer;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            btnselect=itemView.findViewById(R.id.btnselect);
+            lin_soccer=itemView.findViewById(R.id.lin_soccer);
             ca=itemView.findViewById(R.id.tv_ca);
-            giaca=itemView.findViewById(R.id.tv_solg);
-            solg=itemView.findViewById(R.id.tv_giaca);
+            giaca=itemView.findViewById(R.id.tv_giaca);
             thoigian=itemView.findViewById(R.id.tv_thoigian);
         }
     }
