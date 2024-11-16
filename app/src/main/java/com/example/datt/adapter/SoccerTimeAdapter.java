@@ -27,6 +27,7 @@ public class SoccerTimeAdapter  extends RecyclerView.Adapter<SoccerTimeAdapter.V
     private Context context;
     private ArrayList<SoccerTime> Soccertime;
     FirebaseFirestore database;
+    private int selectedPosition = -1;
     public SoccerTimeAdapter(Context context, ArrayList<SoccerTime> Soccertime,FirebaseFirestore database) {
         this.context = context;
         this.Soccertime = Soccertime;
@@ -46,14 +47,21 @@ public class SoccerTimeAdapter  extends RecyclerView.Adapter<SoccerTimeAdapter.V
         holder.thoigian.setText("Thời gian : "+Soccertime.get(position).getThoigianca());
         holder.giaca.setText("Giá cả : "+Soccertime.get(position).getGiaca());
 
+        if (selectedPosition == position) {
+            holder.lin_soccer.setBackgroundResource(R.drawable.customline_select);
+        } else {
+            holder.lin_soccer.setBackgroundResource(R.drawable.custom_line_fb);
+        }
 
         holder.lin_soccer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(view.getContext(), Detail_Book.class);
-                intent.putExtra("ca",Soccertime.get(position).getTenca());
-                intent.putExtra("giaca",Soccertime.get(position).getGiaca());
-                view.getContext().startActivity(intent);
+//                Intent intent=new Intent(view.getContext(), Detail_Book.class);
+//                intent.putExtra("ca",Soccertime.get(position).getTenca());
+//                intent.putExtra("giaca",Soccertime.get(position).getGiaca());
+//                view.getContext().startActivity(intent);
+                selectedPosition = position; // Cập nhật vị trí được chọn
+                notifyDataSetChanged();
             }
         });
 

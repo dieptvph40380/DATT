@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@android:color/white" /> <!-- Màu nền -->
+    <solid android:color="#2196F3" /> <!-- Màu nền -->
     <stroke
-        android:width="2dp"
+        android:width="4dp"
         android:color="#40C148" /> <!-- Màu viền khi được chọn -->
-    <corners android:radius="8dp" /> <!-- Bo góc -->
+    <corners android:radius="8dp" />
+    <padding android:bottom="10dp" android:left="10dp" android:top="10dp" android:right="10dp"/><!-- Bo góc -->
 </shape>
